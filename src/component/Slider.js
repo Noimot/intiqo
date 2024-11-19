@@ -1,11 +1,11 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
+// import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 
 const ImageSlider = () => {
-  const [openImageModal, setOpenImageModal] = useState(false);
+//   const [openImageModal, setOpenImageModal] = useState(false);
   const [activeSlide, setActiveSlide] = useState(0);
 
   const settings = {
@@ -17,16 +17,16 @@ const ImageSlider = () => {
     arrows: true,
     autoplay: true,
     beforeChange: (current, next) => setActiveSlide(next),
-    nextArrow: openImageModal ? undefined : (
-      <div>
-        <ChevronRightIcon className="h-5 w-5" />
-      </div>
-    ),
-    prevArrow: openImageModal ? undefined : (
-      <div>
-        <ChevronLeftIcon className="h-5 w-5" />
-      </div>
-    ),
+    // nextArrow: openImageModal ? undefined : (
+    //   <div>
+    //     <ChevronRightIcon className="h-5 w-5" />
+    //   </div>
+    // ),
+    // prevArrow: openImageModal ? undefined : (
+    //   <div>
+    //     <ChevronLeftIcon className="h-5 w-5" />
+    //   </div>
+    // ),
     appendDots: (dots) => (
       <div
         style={{
@@ -71,6 +71,7 @@ const ImageSlider = () => {
           <img
             src="https://www.kdevs.com.ng/images/portfolio/recent/item2.png"
             className="w-full object-cover h-full"
+            alt=""
           />
           <div className="absolute flex left-32 items-center w-full h-full text-white bottom-20 text-left font-semibold text-2xl leading-10 animate-fade-in">
             <div className="w-1/4 space-y-10">
@@ -100,6 +101,7 @@ const ImageSlider = () => {
           <img
             src="https://www.kdevs.com.ng/images/portfolio/recent/item11.jpg"
             className="w-full object-cover h-full"
+            alt=""
           />
           <div className="absolute flex left-32 items-center w-full h-full text-white bottom-20 text-left font-semibold text-2xl leading-10 animate-fade-in">
             <div className="w-1/4 space-y-10">
@@ -128,6 +130,7 @@ const ImageSlider = () => {
           <img
             src="https://www.kdevs.com.ng/images/portfolio/recent/item2.png"
             className="w-full object-cover h-full"
+            alt=""
           />
           <div className="absolute flex left-32 items-center w-full h-full text-white bottom-20 text-left font-semibold text-2xl leading-10 animate-fade-in">
             <div className="w-1/4 space-y-10">
@@ -156,6 +159,7 @@ const ImageSlider = () => {
           <img
             src="https://www.kdevs.com.ng/images/portfolio/recent/item5.png"
             className="w-full object-cover h-full"
+            alt=""
           />
           <div className="absolute flex left-32 items-center w-full h-full text-white bottom-20 text-left font-semibold text-2xl leading-10 animate-fade-in">
             <div className="w-1/4 space-y-10">

@@ -3,7 +3,6 @@ import Header from "./component/Header";
 import Hero from "./component/Hero";
 import OurService from "./component/OurService";
 import RecentWorks from "./component/RecentWorks";
-import logo from "./logo.svg";
 
 function App() {
   return (

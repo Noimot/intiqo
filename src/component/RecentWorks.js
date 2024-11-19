@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
+import { EyeIcon } from "@heroicons/react/24/outline";
 
 const RecentWorks = () => {
   const firstRef = useRef();
