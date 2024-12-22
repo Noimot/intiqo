@@ -13,7 +13,7 @@ const RecentWorks = () => {
   const ninthRef = useRef();
 
   const handleMouseHover = (ref) => {
-    ref.current.style.zIndex = 999;
+    ref.current.style.zIndex = 10;
     ref.current.style.BackgroundImage = "#26ade4";
   };
   const handleMouseLeave = (ref) => {

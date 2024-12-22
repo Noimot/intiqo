@@ -1,7 +1,10 @@
 import AboutUs from "./component/AboutUs";
+import ContactUs from "./component/ContactUs";
+import Footer from "./component/Footer";
 import Header from "./component/Header";
 import Hero from "./component/Hero";
 import OurService from "./component/OurService";
+import OurTeam from "./component/OurTeam";
 import RecentWorks from "./component/RecentWorks";
 
 function App() {
@@ -13,6 +16,9 @@ function App() {
         <AboutUs />
         <OurService />
         <RecentWorks />
+        <OurTeam />
+        <ContactUs />
+        <Footer />
       </div>
     </section>
   );

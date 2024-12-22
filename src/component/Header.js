@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Header = () => {
+  const [active, setActive] = useState("Home"); // Default active item
+
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "#about" },
+    { name: "Our Services", href: "#services" },
+    { name: "Our Uniqueness", href: "#unique" },
+    { name: "Our Partners", href: "#partners" },
+    { name: "Contact", href: "#contact" },
+  ];
   return (
     <header>
       <nav className="border-b border-[#ccc] p-6 flex items-center justify-between fixed w-full bg-white z-20">
@@ -9,12 +19,19 @@ const Header = () => {
         </span>
         <div className="flex items-center gap-x-8">
           <ul className="flex items-center gap-x-8 font-sm">
-            <li className="hover:text-[#428bca]">Home</li>
-            <li className="hover:text-[#428bca]">About Us</li>
-            <li className="hover:text-[#428bca]">Our Services</li>
-            <li className="hover:text-[#428bca]">Our Uniquesness</li>
-            <li className="hover:text-[#428bca]">Our Partners</li>
-            <li className="hover:text-[#428bca]">Contact</li>
+            {navItems.map((item) => (
+              <li
+                key={item.name}
+                className={`hover:text-[#428bca] pb-2 ${
+                  active === item.name
+                    ? "border-b-2 border-[#428bca] rounded-b-2 text-[#428bca]"
+                    : ""
+                }`}
+                onClick={() => setActive(item.name)}
+              >
+                <a href={item.href}>{item.name}</a>
+              </li>
+            ))}
           </ul>
           <ul className="flex items-center gap-x-2">
             <li className="w-6 h-6 bg-[#404040] rounded-sm hover:bg-[#428bca]">

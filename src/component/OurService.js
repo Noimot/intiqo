@@ -41,7 +41,7 @@ const OurService = () => {
     },
   ];
   return (
-    <section className="bg-[#4e4e4e] p-20">
+    <section className="bg-[#4e4e4e] p-20" id="services">
       <div className="text-center text-white">
         <h1 className="text-4xl font-semibold text-center">Our Service</h1>
         <p className="py-7">

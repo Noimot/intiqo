@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <section>
-      <h1 className="text-4xl text-[#4e4e4e;] font-semibold text-center">About Us</h1>
+    <section id="about">
+      <h1 className="text-4xl text-[#4e4e4e] font-semibold text-center">About Us</h1>
       <div className="flex p-20 gap-x-16 items-start">
         <div className="flex items-center justify-center flex-col">
           <span className="inline-block w-64 h-48">
