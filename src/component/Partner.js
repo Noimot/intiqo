@@ -5,18 +5,22 @@ const Partners = () => {
     {
       link: "",
       src: "/images/img.jpeg",
+      alt: 'Fair Money'
     },
     {
       link: "",
       src: "/images/img1.jpeg",
+      alt: 'Zitra'
     },
     {
       link: "",
       src: "/images/img2.jpeg",
+      alt: 'Page'
     },
     {
       link: "https://thembani.netlify.app/login",
       src: "/images/img4.jpeg",
+      alt: 'Thembani'
     },
   ];
   return (
@@ -36,7 +40,7 @@ const Partners = () => {
         {partners.map((partner) => {
           return (
             <a href={partner.link} target="_blank" rel="noreferrer">
-              <img src={partner.src} className="h-full w-full object-contain"/>
+              <img src={partner.src} className="h-full w-full object-contain" alt={partner.alt} />
             </a>
           );
         })}

@@ -5,7 +5,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 
 export const RightArrow = (props) => {
-  const { style, onClick } = props;
+  const { onClick } = props;
   return (
     <ChevronRightIcon
       className="absolute w-16 h-16 z-[20] cursor-pointer top-[50%] right-[3%] translate-y-[-50%] rotate-180 text-[#26ade4]"
