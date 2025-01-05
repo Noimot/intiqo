@@ -14,8 +14,8 @@ const Header = () => {
   return (
     <header>
       <nav className="border-b border-[#ccc] p-6 flex items-center justify-between fixed w-full bg-white z-20">
-        <span className="inline-block ml-6">
-          <img src="" alt="Company logo" />
+        <span className="inline-block ml-6 w-10 h-10">
+          <img src="/images/miatech-logo.jpeg" alt="Company logo" />
         </span>
         <div className="flex items-center gap-x-8">
           <ul className="flex items-center gap-x-8 font-sm">

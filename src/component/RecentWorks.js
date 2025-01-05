@@ -5,13 +5,7 @@ const RecentWorks = () => {
   const firstRef = useRef();
   const secondRef = useRef();
   const thirdRef = useRef();
-  const forthRef = useRef();
-  const fifthRef = useRef();
-  const sixthRef = useRef();
-  const seventhRef = useRef();
-  const eighthRef = useRef();
-  const ninthRef = useRef();
-
+  
   const handleMouseHover = (ref) => {
     ref.current.style.zIndex = 10;
     ref.current.style.BackgroundImage = "#26ade4";
@@ -24,73 +18,30 @@ const RecentWorks = () => {
     firstRef.current.style.zIndex = -1;
     secondRef.current.style.zIndex = -1;
     thirdRef.current.style.zIndex = -1;
-    forthRef.current.style.zIndex = -1;
-    fifthRef.current.style.zIndex = -1;
-    sixthRef.current.style.zIndex = -1;
-    seventhRef.current.style.zIndex = -1;
-    eighthRef.current.style.zIndex = -1;
-    ninthRef.current.style.zIndex = -1;
   });
   const images = [
     {
-      image: "https://www.kdevs.com.ng/images/portfolio/recent/item9.jpg",
-      heading: "Educational Software",
-      paragraph: "We are co-hired to develop a robust educational software",
+      image: "/images/primepay.jpeg",
+      heading: "PrimePay",
+      paragraph: "Redefining Access to Credit and Financing we bring people together and make credit and alternative financing accessible to all",
       refName: firstRef,
+      link: "https://www.prime-pay.africa/index.html"
     },
     {
-      image: "https://www.kdevs.com.ng/images/portfolio/recent/item10.jpg",
-      heading: "Financial Application",
+      image: "/images/thembani.jpeg",
+      heading: "Thembani",
       paragraph:
-        "We have versatile experience in FinTech app. We have been co-hired to develop such a wonderful app",
+        "Promoting Financial Inclusion in Africa Business development company aiming to promote financial inclusion in Africa and bring SMEs into the mainstream economy",
       refName: secondRef,
+      link: "https://thembani.netlify.app/login"
     },
     {
-      image: "https://www.kdevs.com.ng/images/portfolio/recent/item11.jpg",
-      heading: "Payment Gateway",
+      image: "/images/page-fin.jpeg",
+      heading: "Page Financials",
       paragraph:
-        "Another FinTech application that we have been co-hired to work on",
+        "We want to be your one-stop-shop when you need urgent cash, extra income or any other financial services",
       refName: thirdRef,
-    },
-    {
-      image: "https://www.kdevs.com.ng/images/portfolio/recent/item1.png",
-      heading: "Hilltrusttop Foundation",
-      paragraph: "This is an NGO that serves the need to help youth in society",
-      refName: forthRef,
-    },
-    {
-      image: "https://www.kdevs.com.ng/images/portfolio/recent/item2.png",
-      heading: "Efiwe Inc",
-      paragraph:
-        "We voluntarily co-worked with Efiwe to deliver their NGO organization website",
-      refName: fifthRef,
-    },
-    {
-      image: "https://www.kdevs.com.ng/images/portfolio/recent/item3.png",
-      heading: "Computer Based Test",
-      paragraph:
-        "Developed to prevent examination malpractice and ease students and staff on their worries",
-      refName: sixthRef,
-    },
-    {
-      image: "https://www.kdevs.com.ng/images/portfolio/recent/item4.png",
-      heading: "Screening Manager",
-      paragraph: "This is developed to ease screening process in institutions",
-      refName: seventhRef,
-    },
-    {
-      image: "https://www.kdevs.com.ng/images/portfolio/recent/item5.png",
-      heading: "Student Information Management System",
-      paragraph:
-        "A complete Education Management System for tertiary institutions",
-      refName: eighthRef,
-    },
-    {
-      image: "https://www.kdevs.com.ng/images/portfolio/recent/item6.png",
-      heading: "Question Bank System",
-      paragraph:
-        "A complete education training and practising system for high school students",
-      refName: ninthRef,
+      link: "https://www.prime-pay.africa/index.html"
     },
   ];
 
@@ -100,7 +51,7 @@ const RecentWorks = () => {
         <h2 className="text-4xl font-semibold text-center">Recent works</h2>
         <p>What we have done so far</p>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-7">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 pt-7">
         {images.map((_images) => (
           <div
             className="h-[300px] relative"
@@ -124,7 +75,7 @@ const RecentWorks = () => {
                 <h4 className="text-2xl">{_images.heading}</h4>
                 <p className="text-base">{_images.paragraph}</p>
                 <div>
-                  <a href="/" className="flex items-center gap-x-2">
+                  <a href={_images.link} className="flex items-center gap-x-2" target="_blank">
                     <EyeIcon className="h-5 w-5 text-white" />
                     <span>View</span>
                   </a>

@@ -25,13 +25,13 @@ const OurService = () => {
       image: "https://www.kdevs.com.ng/images/services/services4.png",
       title: "Mobile Development",
       paragraph:
-        "We develop modernize mobile application that suit your business.",
+        "We can help you create a customized mobile app that aligns with your brand and goals, with expertise in various mobile platform.",
     },
     {
       image: "https://www.kdevs.com.ng/images/services/services6.png",
-      title: "Consulting",
+      title: "IT Consulting & Advisory",
       paragraph:
-        "We also render business build up, application testing and training.",
+        "The right technology, implemented properly, appropriately managed and monitored, can lead to significant gains in growth.",
     },
     {
       image: "https://www.kdevs.com.ng/images/services/services5.png",
@@ -49,9 +49,13 @@ const OurService = () => {
           Do need us? you can provide a slot ASAP.
         </p>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((service) => (
-          <Card title={service.title} paragraph={service.paragraph} image={service.image} />
+          <Card
+            title={service.title}
+            paragraph={service.paragraph}
+            image={service.image}
+          />
         ))}
       </div>
     </section>

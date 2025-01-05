@@ -12,9 +12,7 @@ const OurTeam = () => {
           <br /> We grow with zeal and passion for development in our heart.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-10">
-        <ImageCard />
-        <ImageCard />
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
         <ImageCard />
         <ImageCard />
         <ImageCard />
