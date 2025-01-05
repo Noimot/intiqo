@@ -14,7 +14,7 @@ export const RightArrow = (props) => {
   );
 };
 export const LeftArrow = (props) => {
-  const { style, onClick } = props;
+  const { onClick } = props;
   return (
     <ChevronLeftIcon
       className="absolute w-16 h-16 z-[20] cursor-pointer top-[50%] left-[3%] translate-y-[-50%] rotate-180 text-[#26ade4]"

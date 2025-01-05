@@ -75,7 +75,7 @@ const RecentWorks = () => {
                 <h4 className="text-2xl">{_images.heading}</h4>
                 <p className="text-base">{_images.paragraph}</p>
                 <div>
-                  <a href={_images.link} className="flex items-center gap-x-2" target="_blank">
+                  <a href={_images.link} className="flex items-center gap-x-2" target="_blank" rel="noreferrer">
                     <EyeIcon className="h-5 w-5 text-white" />
                     <span>View</span>
                   </a>

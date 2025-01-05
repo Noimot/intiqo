@@ -35,7 +35,7 @@ const Partners = () => {
       <div className="grid grid-cols-4 gap-6">
         {partners.map((partner) => {
           return (
-            <a href={partner.link} target="_blank">
+            <a href={partner.link} target="_blank" rel="noreferrer">
               <img src={partner.src} className="h-full w-full object-contain"/>
             </a>
           );
