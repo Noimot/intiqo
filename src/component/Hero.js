@@ -3,7 +3,7 @@ import ImageSlider from './Slider'
 
 const Hero = () => {
   return (
-    <section className='my-20'>
+    <section className='mt-20'>
       <ImageSlider />
     </section>
   )

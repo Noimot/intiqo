@@ -1,4 +1,5 @@
 import React from "react";
+import { PartnersSlider } from "./Slider";
 
 const Partners = () => {
   const partners = [
@@ -13,7 +14,7 @@ const Partners = () => {
       alt: 'Zitra'
     },
     {
-      link: "",
+      link: "https://pagefinancials.com/",
       src: "/images/img2.jpeg",
       alt: 'Page'
     },
@@ -24,7 +25,7 @@ const Partners = () => {
     },
   ];
   return (
-    <section className="bg-[#4e4e4e] p-20">
+    <section className="bg-[#4e4e4e] py-20 px-10 sm:px-14 md:px-20 lg:px-40" id="partners">
       <div className="text-center text-white">
         <h1 className="text-4xl font-semibold text-center">Our Partners</h1>
         <p className="py-7">
@@ -36,14 +37,8 @@ const Partners = () => {
           comes first in what we do.
         </p>
       </div>
-      <div className="grid grid-cols-4 gap-6">
-        {partners.map((partner) => {
-          return (
-            <a href={partner.link} target="_blank" rel="noreferrer">
-              <img src={partner.src} className="h-full w-full object-contain" alt={partner.alt} />
-            </a>
-          );
-        })}
+      <div className="mt-10">
+        <PartnersSlider images={partners}/>
       </div>
     </section>
   );

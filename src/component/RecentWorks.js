@@ -5,7 +5,8 @@ const RecentWorks = () => {
   const firstRef = useRef();
   const secondRef = useRef();
   const thirdRef = useRef();
-  
+  const forthRef = useRef();
+
   const handleMouseHover = (ref) => {
     ref.current.style.zIndex = 10;
     ref.current.style.BackgroundImage = "#26ade4";
@@ -18,14 +19,16 @@ const RecentWorks = () => {
     firstRef.current.style.zIndex = -1;
     secondRef.current.style.zIndex = -1;
     thirdRef.current.style.zIndex = -1;
+    forthRef.current.style.zIndex = -1;
   });
   const images = [
     {
       image: "/images/primepay.jpeg",
       heading: "PrimePay",
-      paragraph: "Redefining Access to Credit and Financing we bring people together and make credit and alternative financing accessible to all",
+      paragraph:
+        "Redefining Access to Credit and Financing we bring people together and make credit and alternative financing accessible to all",
       refName: firstRef,
-      link: "https://www.prime-pay.africa/index.html"
+      link: "https://www.prime-pay.africa/index.html",
     },
     {
       image: "/images/thembani.jpeg",
@@ -33,7 +36,7 @@ const RecentWorks = () => {
       paragraph:
         "Promoting Financial Inclusion in Africa Business development company aiming to promote financial inclusion in Africa and bring SMEs into the mainstream economy",
       refName: secondRef,
-      link: "https://thembani.netlify.app/login"
+      link: "https://thembani.netlify.app/login",
     },
     {
       image: "/images/page-fin.jpeg",
@@ -41,17 +44,25 @@ const RecentWorks = () => {
       paragraph:
         "We want to be your one-stop-shop when you need urgent cash, extra income or any other financial services",
       refName: thirdRef,
-      link: "https://www.prime-pay.africa/index.html"
+      link: "https://pagefinancials.com/",
+    },
+    {
+      image: "/images/yep.jpeg",
+      heading: "Getpay",
+      paragraph:
+        "A complete payment platform, designed & engineered for growth Accept online payment from customers globally through a platform designed to help you grow and get more revenue",
+      refName: forthRef,
+      link: "https://www.getyep.co/",
     },
   ];
 
   return (
-    <section className="p-20">
+    <section className="py-20 px-10 sm:px-14 md:px-20">
       <div className="text-center text-[#4e4e4e] space-y-4">
         <h2 className="text-4xl font-semibold text-center">Recent works</h2>
         <p>What we have done so far</p>
       </div>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 pt-7">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 mt-10">
         {images.map((_images) => (
           <div
             className="h-[300px] relative"
@@ -75,7 +86,12 @@ const RecentWorks = () => {
                 <h4 className="text-2xl">{_images.heading}</h4>
                 <p className="text-base">{_images.paragraph}</p>
                 <div>
-                  <a href={_images.link} className="flex items-center gap-x-2" target="_blank" rel="noreferrer">
+                  <a
+                    href={_images.link}
+                    className="flex items-center gap-x-2"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <EyeIcon className="h-5 w-5 text-white" />
                     <span>View</span>
                   </a>

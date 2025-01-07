@@ -49,7 +49,7 @@ const ContactUs = () => {
 
   return (
     <section
-      className="p-20 flex flex-col justify-center items-center"
+      className="py-20 px-10 sm:px-14 md:px-20 flex flex-col justify-center items-center"
       id="contact"
     >
       <div className="text-center text-[#4e4e4e]">

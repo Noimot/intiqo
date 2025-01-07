@@ -137,3 +137,28 @@ const ImageSlider = () => {
 };
 
 export default ImageSlider;
+
+export const PartnersSlider = ({ images }) => {
+  const partnerSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+  };
+  return (
+    <Slider {...partnerSettings}>
+        {images.map((image) => (
+          <a href={image.link} target="_blank" rel="noreferrer" className="flex items-center">
+            <img
+              src={image.src}
+              className="w-5/6 object-contain"
+              alt={image.alt}
+            />
+          </a>
+        ))}
+    </Slider>
+  );
+};

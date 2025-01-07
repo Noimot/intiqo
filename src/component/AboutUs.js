@@ -2,13 +2,13 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <section id="about">
+    <section className="px-10 sm:px-14 md:px-20 py-20" id="about">
       <h1 className="text-4xl text-[#4e4e4e] font-semibold text-center">
         About Us
       </h1>
-      <div className="flex flex-col px-10 sm:px-14 md:px-20 lg:px-40 pt-10 pb-20 gap-x-16 items-start">
+      <div className="flex flex-col gap-x-16 items-start pt-10">
         <div className="flex items-center justify-center flex-col">
-          <p className="text-justify">
+          <p className="text-justify leading-8">
             Welcome to Miatech, where innovation meets expertise in software
             development. we are passionate about crafting innovative and
             scalable software solutions that empower businesses to thrive in a
@@ -27,7 +27,7 @@ const AboutUs = () => {
             together.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row gap-x-24 items-start mt-14">
+        <div className="flex flex-col md:flex-row gap-24 items-start mt-14">
           <div className="flex items-center justify-center flex-col flex-[50%]">
             <span className="inline-block w-72 h-28">
               <img

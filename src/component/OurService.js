@@ -41,7 +41,7 @@ const OurService = () => {
     },
   ];
   return (
-    <section className="bg-[#4e4e4e] p-20" id="services">
+    <section className="bg-[#4e4e4e] py-20 px-10 sm:px-14 md:px-20" id="services">
       <div className="text-center text-white">
         <h1 className="text-4xl font-semibold text-center">Our Service</h1>
         <p className="py-7">
@@ -49,7 +49,7 @@ const OurService = () => {
           Do need us? you can provide a slot ASAP.
         </p>
       </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
         {services.map((service) => (
           <Card
             title={service.title}
