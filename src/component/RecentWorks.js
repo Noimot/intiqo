@@ -63,12 +63,12 @@ const RecentWorks = () => {
         <p>What we have done so far</p>
       </div>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 mt-10">
-        {images.map((_images) => (
+        {images.map((_images, index) => (
           <div
             className="h-[300px] relative"
             onMouseEnter={() => handleMouseHover(_images.refName)}
             onMouseLeave={() => handleMouseLeave(_images.refName)}
-            key={_images.refName}
+            key={_images.refName + index} 
             style={{
               backgroundImage: `url(${_images.image})`,
               backgroundPosition: "center",

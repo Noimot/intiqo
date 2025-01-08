@@ -8,7 +8,7 @@ export const RightArrow = (props) => {
   const { onClick } = props;
   return (
     <ChevronRightIcon
-      className="absolute w-16 h-16 z-[20] cursor-pointer top-[50%] right-[3%] translate-y-[-50%] rotate-180 text-[#26ade4]"
+      className="absolute w-16 h-16 z-[10] cursor-pointer top-[50%] right-[3%] translate-y-[-50%] rotate-180 text-[#26ade4]"
       onClick={onClick}
     />
   );
@@ -17,7 +17,7 @@ export const LeftArrow = (props) => {
   const { onClick } = props;
   return (
     <ChevronLeftIcon
-      className="absolute w-16 h-16 z-[20] cursor-pointer top-[50%] left-[3%] translate-y-[-50%] rotate-180 text-[#26ade4]"
+      className="absolute w-16 h-16 z-[10] cursor-pointer top-[50%] left-[3%] translate-y-[-50%] rotate-180 text-[#26ade4]"
       onClick={onClick}
     />
   );
@@ -72,10 +72,10 @@ const ImageSlider = () => {
             className="w-full object-cover h-full"
             alt=""
           />
-          <div className="absolute flex bg-gray-900 bg-opacity-40 items-center text-center justify-center w-full h-full text-white bottom-0  font-semibold text-2xl leading-10 animate-fade-in">
+          <div className="absolute flex bg-gray-900 bg-opacity-60 items-center text-center justify-center w-full h-full text-white bottom-0  font-semibold text-2xl leading-10 animate-fade-in">
             <div className="w-1/2 space-y-10">
-              <h3 className="text-4xl font-bold">Cost - Effectiveness:</h3>
-              <p>
+              <h3 className="text-5xl font-bold">Cost - Effectiveness:</h3>
+              <p className="text-2xl leading-10">
                 We offer affordable IT solutions that help you reduce costs and
                 improve your bottom line
               </p>
@@ -88,10 +88,10 @@ const ImageSlider = () => {
             className="w-full object-cover h-full"
             alt=""
           />
-          <div className="absolute flex bg-gray-900 bg-opacity-40 items-center text-center justify-center w-full h-full text-white bottom-0 font-semibold text-2xl leading-10 animate-fade-in">
+          <div className="absolute flex bg-gray-900 bg-opacity-60 items-center text-center justify-center w-full h-full text-white bottom-0 font-semibold text-2xl leading-10 animate-fade-in">
             <div className="w-1/2  space-y-10">
-              <h2 className="text-4xl font-bold">Innovative Technology:</h2>
-              <p>
+              <h2 className="text-5xl font-bold">Innovative Technology:</h2>
+              <p className="text-2xl leading-10">
                 We stay up-to-date with the latest technology trends and offer
                 innovative solutions thathelp you stay ahead of the competition
               </p>
@@ -104,10 +104,10 @@ const ImageSlider = () => {
             className="w-full object-cover h-full"
             alt=""
           />
-          <div className="absolute flex bg-gray-900 bg-opacity-40 items-center text-center justify-center w-full h-full text-white bottom-0 font-semibold text-2xl leading-10 animate-fade-in">
+          <div className="absolute flex bg-gray-900 bg-opacity-60 items-center text-center justify-center w-full h-full text-white bottom-0 font-semibold text-2xl leading-10 animate-fade-in">
             <div className="w-1/2  space-y-10">
-              <h2 className="text-4xl font-bold">Scalability:</h2>
-              <p>
+              <h2 className="text-5xl font-bold">Scalability:</h2>
+              <p className="text-2xl leading-10">
                 Our solutions are scalable and can grow with your business
                 ensuring that you get the most value out of your investment
               </p>
@@ -120,10 +120,10 @@ const ImageSlider = () => {
             className="w-full object-cover h-full"
             alt=""
           />
-          <div className="absolute flex bg-gray-900 bg-opacity-40 items-center text-center justify-center w-full h-full text-white bottom-0 font-semibold text-2xl leading-10 animate-fade-in">
+          <div className="absolute flex bg-gray-900 bg-opacity-60 items-center text-center justify-center w-full h-full text-white bottom-0 font-semibold text-2xl leading-10 animate-fade-in">
             <div className="w-1/2  space-y-10">
-              <h2 className="text-4xl font-bold">Industry Expertise:</h2>
-              <p>
+              <h2 className="text-5xl font-bold">Industry Expertise:</h2>
+              <p className="text-2xl leading-10">
                 We specialize in serving specific industries such as healthcare,
                 finance, manufacturing , transportation and offer tailored
                 solutions that meet your unique needs.{" "}
@@ -150,15 +150,21 @@ export const PartnersSlider = ({ images }) => {
   };
   return (
     <Slider {...partnerSettings}>
-        {images.map((image) => (
-          <a href={image.link} target="_blank" rel="noreferrer" className="flex items-center">
-            <img
-              src={image.src}
-              className="w-5/6 object-contain"
-              alt={image.alt}
-            />
-          </a>
-        ))}
+      {images.map((image, index) => (
+        <a
+          href={image.link}
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center w-[2/3] h-16"
+          key={image.link + index}
+        >
+          <img
+            src={image.src}
+            className="w-full h-full object-contain"
+            alt={image.alt}
+          />
+        </a>
+      ))}
     </Slider>
   );
 };

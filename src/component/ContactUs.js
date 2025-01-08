@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import toast from "react-hot-toast";
+
 
 const ContactUs = () => {
 
@@ -20,7 +22,7 @@ const ContactUs = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://formspree.io/f/mqazzvob", {
+    const response = await fetch("https://formspree.io/f/xannlgeq", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -31,8 +33,7 @@ const ContactUs = () => {
     });
 
     if (response.ok) {
-      //   toast.success("Form submission successful!");
-      // setStatus("Form submission successful!");
+        toast.success("Form submission successful!");
       setContactInfo({
         ...contactInfo,
         email: "",
@@ -42,8 +43,7 @@ const ContactUs = () => {
         business_name: "",
       });
     } else {
-      //   toast.error("Form submission failed. Please try again.");
-      // setStatus("Form submission failed. Please try again.");
+        toast.error("Form submission failed. Please try again.");
     }
   };
 

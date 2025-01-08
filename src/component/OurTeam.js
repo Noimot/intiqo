@@ -10,10 +10,10 @@ const OurTeam = () => {
       social_media: {
         twitter: "",
         facebook: "",
-        linkedln: "",
+        linkedln: "https://www.linkedin.com/in/ismail-oguntoyinbo-904aaa80/",
       },
-      info: "",
-      image: ""
+      info: "An accomplished and visionary engineering leader with a strong technical background and an unwavering passion for driving business growth through technology. Excels in aligning engineering strategies with organizational goals, fostering innovation, and building high-performing, collaborative teams. Oguntoyinbo Ismail ola is a graduate of University of Ibadan, Ibadan, Oyo state, Nigeria, he holds a Bachelor of Science (BSc.) Degree in Computer Science",
+      image: "/images/ismail.jpeg",
     },
     {
       name: "Victor Olalekan Ajayi",
@@ -22,22 +22,22 @@ const OurTeam = () => {
       social_media: {
         twitter: "",
         facebook: "",
-        linkedln: "",
+        linkedln: "https://www.linkedin.com/in/victorajayi-lordbishop/",
       },
-      info: "",
-      image: ""
+      info: "Dedicated IT manager. With a solid background in financial applications, network administration, cybersecurity and project management.Victor, Ajayi is a graduate of University of Ibadan, Ibadan, Oyo state, Nigeria; he holds Master’s Degree in Computer Science,",
+      image: "/images/victor.jpeg",
     },
     {
       name: "Alase Sodiq",
       role: "Senior Frontend Engineer",
-      skills: [],
+      skills: ["React", "Next", "Vue", "TypeScript"],
       social_media: {
         twitter: "",
         facebook: "",
-        linkedln: "",
+        linkedln: "https://www.linkedin.com/in/sodiqalase/",
       },
       info: "",
-      image: ""
+      image: "/images/sodiq.jpeg",
     },
     {
       name: "Damilola  Ogunsanya",
@@ -46,10 +46,10 @@ const OurTeam = () => {
       social_media: {
         twitter: "",
         facebook: "",
-        linkedln: "",
+        linkedln: "https://www.linkedin.com/in/ogunsanya-damilola/",
       },
-      info: "",
-      image: ""
+      info: "An advocate for good UX and Customer focused usable product that provides the best experience. Ogunsanya, Damilola is a graduate of Yaba College of Technology, Yaba, Lagos, Nigeria; he holds Higher National Diploma, Graphic Design. Dami has vast knowledge in user experience. He's highly skilled in graphics design, backed with good teamwork.",
+      image: "/images/damilola.jpeg",
     },
     {
       name: "Noimot Alabi",
@@ -61,7 +61,7 @@ const OurTeam = () => {
         linkedln: "https://www.linkedin.com/in/noimot-alabi/",
       },
       info: "Experienced frontend developer with 3+ years in crafting dynamic interfaces for various applications, including real estate, logistics, e-commerce, and finance. Proficient in HTML, CSS, JavaScript, React, Next.js, Nuxt.js, Tailwind CSS, Nodejs and TypeScript. ",
-      image: "/images/noimot.jpeg"
+      image: "/images/noimot.jpeg",
     },
   ];
   return (
@@ -75,7 +75,11 @@ const OurTeam = () => {
         </p>
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
-        {teamDetails.map((details) => <ImageCard teamDetails={details}/>)}
+        {teamDetails.map((details) => (
+          <React.Fragment key={details.name}>
+            <ImageCard teamDetails={details} />
+          </React.Fragment>
+        ))}
       </div>
     </section>
   );
