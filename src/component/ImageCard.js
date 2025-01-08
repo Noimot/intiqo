@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ImageCard = ({ teamDetails }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
   return (
     <div className="border border-[#dddddd] p-4 space-y-5">
       <div className="flex gap-x-5">
@@ -55,7 +56,20 @@ const ImageCard = ({ teamDetails }) => {
           </div>
         </div>
       </div>
-      <p className="text-justify text-sm">{teamDetails.info}</p>
+      <div>
+        <p
+          className={`${isExpanded ? "" : "line-clamp-4"} text-justify text-sm`}
+        >
+          {teamDetails.info}
+        </p>
+
+        <button
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="bg-blue-500 mt-2 rounded text-xs text-white p-1"
+        >
+          {isExpanded ? "View Less" : "View More"}
+        </button>
+      </div>
     </div>
   );
 };

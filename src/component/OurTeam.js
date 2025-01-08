@@ -5,7 +5,7 @@ const OurTeam = () => {
   const teamDetails = [
     {
       name: "Oguntoyinbo Ismail Ola",
-      role: "Head of Engineering",
+      role: "Head of IT and Innovations",
       skills: [],
       social_media: {
         twitter: "",
@@ -16,18 +16,6 @@ const OurTeam = () => {
       image: "/images/ismail.jpeg",
     },
     {
-      name: "Victor Olalekan Ajayi",
-      role: "Head of IT & Innovations",
-      skills: [],
-      social_media: {
-        twitter: "",
-        facebook: "",
-        linkedln: "https://www.linkedin.com/in/victorajayi-lordbishop/",
-      },
-      info: "Dedicated IT manager. With a solid background in financial applications, network administration, cybersecurity and project management.Victor, Ajayi is a graduate of University of Ibadan, Ibadan, Oyo state, Nigeria; he holds Master’s Degree in Computer Science,",
-      image: "/images/victor.jpeg",
-    },
-    {
       name: "Alase Sodiq",
       role: "Senior Frontend Engineer",
       skills: ["React", "Next", "Vue", "TypeScript"],
@@ -36,7 +24,7 @@ const OurTeam = () => {
         facebook: "",
         linkedln: "https://www.linkedin.com/in/sodiqalase/",
       },
-      info: "",
+      info: "A results-driven Frontend Engineer with over 5 years of extensive experience across the fintech (payments), logistics, healthcare, investment, and e-commerce sectors. Sodiq specialize in developing scalable, high-performance web applications that drive business success and address user needs. With experience leading frontend teams, He is skilled in guiding projects from concept to delivery, fostering collaboration, and ensuring high-quality outcomes.",
       image: "/images/sodiq.jpeg",
     },
     {
@@ -48,7 +36,7 @@ const OurTeam = () => {
         facebook: "",
         linkedln: "https://www.linkedin.com/in/ogunsanya-damilola/",
       },
-      info: "An advocate for good UX and Customer focused usable product that provides the best experience. Ogunsanya, Damilola is a graduate of Yaba College of Technology, Yaba, Lagos, Nigeria; he holds Higher National Diploma, Graphic Design. Dami has vast knowledge in user experience. He's highly skilled in graphics design, backed with good teamwork.",
+      info: "An advocate for good UX and Customer focused usable product that provides the best experience. Ogunsanya Damilola is a graduate of Yaba College of Technology, Yaba, Lagos, Nigeria; he holds Higher National Diploma, Graphic Design. Dami has vast knowledge in user experience. He's highly skilled in graphics design, backed with good teamwork.",
       image: "/images/damilola.jpeg",
     },
     {
