@@ -63,17 +63,17 @@ const Header = () => {
           onClick={handleMenu}
         >
           <span
-            className={`inline-block bg-[#26ade4] border-solid border-2 w-6 origin-left ease-in transition-all duration-[1s] ${
+            className={`inline-block bg-[#26ade4] border-[#26ade4] [border-solid border-2 w-6 origin-left ease-in transition-all duration-[1s] ${
               menu && "rotate-45"
             }`}
           />
           <span
-            className={`inline-block  bg-[#26ade4] border-solid border-2 w-6 origin-left ease-in transition-all duration-[1s] ${
+            className={`inline-block  bg-[#26ade4] border-[#26ade4]  border-solid border-2 w-6 origin-left ease-in transition-all duration-[1s] ${
               menu && "opacity-0"
             }`}
           />
           <span
-            className={`inline-block  bg-[#26ade4] border-solid border-2 w-6 origin-left ease-in transition-all duration-[1s] ${
+            className={`inline-block  bg-[#26ade4] border-[#26ade4]  border-solid border-2 w-6 origin-left ease-in transition-all duration-[1s] ${
               menu && "-rotate-45"
             }`}
           />
