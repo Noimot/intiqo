@@ -7,25 +7,30 @@ const AboutUs = () => {
         About Us
       </h1>
       <div className="flex flex-col gap-x-16 items-start pt-10">
-        <div className="flex items-center justify-center flex-col">
-          <p className="text-center leading-8">
+        <div className="flex items-center justify-center flex-col space-y-8">
+          <p>
             Welcome to Miatech, where innovation meets expertise in software
             development. we are passionate about crafting innovative and
             scalable software solutions that empower businesses to thrive in a
-            digital-first world. Founded with the vision to transform complex
-            challenges into seamless experiences, our team of dedicated
-            developers, designers, and strategists delivers cutting-edge
-            technology tailored to your needs. We specialize in end-to-end
-            software development, from ideation to deployment, focusing on
-            creating robust, user-friendly, and future-proof solutions. Our
-            expertise spans web and mobile applications, backend systems, cloud
-            integrations, and more. With a commitment to excellence, agility,
-            and collaboration, we build lasting partnerships with our clients,
-            driving success through technology. Whether you're a startup looking
-            to launch your next big idea or an enterprise aiming to modernize
-            your systems, we're here to make it happen. Let’s build the future,
-            together.
-          </p>
+            digital-first world.</p>
+            <p>
+              Founded with the vision to transform complex challenges into
+              seamless experiences, our team of dedicated developers, designers,
+              and strategists delivers cutting-edge technology tailored to your
+              needs. We specialize in end-to-end software development, from
+              ideation to deployment, focusing on creating robust,
+              user-friendly, and future-proof solutions. Our expertise spans web
+              and mobile applications, backend systems, cloud integrations, and
+              more.
+            </p>
+            <p>
+              With a commitment to excellence, agility, and collaboration, we
+              build lasting partnerships with our clients, driving success
+              through technology. Whether you're a startup looking to launch
+              your next big idea or an enterprise aiming to modernize your
+              systems, we're here to make it happen. Let’s build the future,
+              together.
+            </p>
         </div>
         <div className="flex flex-col md:flex-row gap-24 items-start mt-14">
           <div className="flex items-center justify-center flex-col flex-[50%]">

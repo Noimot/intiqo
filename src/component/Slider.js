@@ -93,7 +93,7 @@ const ImageSlider = () => {
               <h2 className="text-5xl font-bold">Innovative Technology:</h2>
               <p className="text-2xl leading-10">
                 We stay up-to-date with the latest technology trends and offer
-                innovative solutions thathelp you stay ahead of the competition
+                innovative solutions that help you stay ahead of the competition
               </p>
             </div>
           </div>

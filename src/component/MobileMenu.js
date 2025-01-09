@@ -8,9 +8,7 @@ const MobileMenu = ({ handleMenu, setActive, navItems, active }) => {
           <li
             key={item.name}
             className={`hover:text-[#428bca] pb-2 ${
-              active === item.name
-                ? "rounded-b-2 text-[#428bca]"
-                : ""
+              active === item.name ? "rounded-b-2 text-[#428bca]" : ""
             }`}
             onClick={() => setActive(item.name)}
           >
@@ -20,12 +18,18 @@ const MobileMenu = ({ handleMenu, setActive, navItems, active }) => {
       </ul>
       <ul className="flex items-center gap-x-2 mt-10">
         <li className="w-6 h-6 bg-[#404040] rounded-sm hover:bg-[#428bca]">
-          <a href="https://www.facebook.com" aria-label="Facebook">
+          <a
+            href="/"
+            aria-label="Facebook"
+          >
             <img src="/images/facebook.svg" alt="facebook icon" />
           </a>
         </li>
         <li className="w-6 h-6 bg-[#404040] rounded-sm hover:bg-[#428bca]">
-          <a href="https://twitter.com" aria-label="Twitter">
+          <a
+            href="/"
+            aria-label="Twitter"
+          >
             <img src="/images/twitter.svg" alt="twitter icon" />
           </a>
         </li>
@@ -33,6 +37,8 @@ const MobileMenu = ({ handleMenu, setActive, navItems, active }) => {
           <a
             href="https://www.linkedin.com/in/ismail-oguntoyinbo-904aaa80/"
             aria-label="LinkedIn"
+            target="_blank"
+            rel="noreferrer"
           >
             <img src="/images/linkedln.svg" alt="linkenin icon" />
           </a>
