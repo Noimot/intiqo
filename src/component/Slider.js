@@ -8,7 +8,7 @@ export const RightArrow = (props) => {
   const { onClick } = props;
   return (
     <ChevronRightIcon
-      className="absolute w-16 h-16 z-[10] cursor-pointer top-[50%] right-[3%] translate-y-[-50%] rotate-180 text-[#26ade4]"
+      className="absolute w-16 h-16 z-[10] cursor-pointer top-[50%] right-[3%] translate-y-[-50%] rotate-180 text-[#C87759]"
       onClick={onClick}
     />
   );
@@ -17,7 +17,7 @@ export const LeftArrow = (props) => {
   const { onClick } = props;
   return (
     <ChevronLeftIcon
-      className="absolute w-16 h-16 z-[10] cursor-pointer top-[50%] left-[3%] translate-y-[-50%] rotate-180 text-[#26ade4]"
+      className="absolute w-16 h-16 z-[10] cursor-pointer top-[50%] left-[3%] translate-y-[-50%] rotate-180 text-[#C87759]"
       onClick={onClick}
     />
   );
@@ -29,6 +29,7 @@ const ImageSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
+    fade: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -56,10 +57,16 @@ const ImageSlider = () => {
     ),
     customPaging: (i) => (
       <div
-        className={`w-4 h-4 rounded-full ${
-          i === activeSlide ? "bg-white" : "bg-[#26ade4]"
+        className={`w-6 h-6 rounded-full flex justify-center items-center flex-col ${
+          i === activeSlide ? "border border-[#C87759]" : ""
         }`}
-      ></div>
+      >
+        <div
+          className={`w-2 h-2 rounded-full ${
+            i === activeSlide ? "bg-[#C87759]" : "bg-white"
+          }`}
+        ></div>
+      </div>
     ),
   };
 
@@ -72,12 +79,13 @@ const ImageSlider = () => {
             className="w-full object-cover h-full"
             alt=""
           />
-          <div className="absolute flex bg-gray-900 bg-opacity-60 items-center text-center justify-center w-full h-full text-white bottom-0  font-semibold text-2xl leading-10 animate-fade-in">
+          <div className="absolute flex bg-gray-900 bg-opacity-70 items-center text-center justify-center w-full h-full text-white bottom-0  font-semibold text-2xl leading-10 animate-fade-in">
             <div className="w-1/2 space-y-10">
-              <h3 className="text-5xl font-bold">Cost - Effectiveness:</h3>
+              <h3 className="text-5xl font-bold">
+                INTIQO TECHNOLOGY SERVICE LIMITED
+              </h3>
               <p className="text-2xl leading-10">
-                We offer affordable IT solutions that help you reduce costs and
-                improve your bottom line
+                EMPOWERING FINANCIAL TRANSFORMATION THROUGH TECHNOLOGY
               </p>
             </div>
           </div>
@@ -88,7 +96,7 @@ const ImageSlider = () => {
             className="w-full object-cover h-full"
             alt=""
           />
-          <div className="absolute flex bg-gray-900 bg-opacity-60 items-center text-center justify-center w-full h-full text-white bottom-0 font-semibold text-2xl leading-10 animate-fade-in">
+          <div className="absolute flex bg-gray-900 bg-opacity-70 items-center text-center justify-center w-full h-full text-white bottom-0 font-semibold text-2xl leading-10 animate-fade-in">
             <div className="w-1/2  space-y-10">
               <h2 className="text-5xl font-bold">Innovative Technology:</h2>
               <p className="text-2xl leading-10">
@@ -104,7 +112,7 @@ const ImageSlider = () => {
             className="w-full object-cover h-full"
             alt=""
           />
-          <div className="absolute flex bg-gray-900 bg-opacity-60 items-center text-center justify-center w-full h-full text-white bottom-0 font-semibold text-2xl leading-10 animate-fade-in">
+          <div className="absolute flex bg-gray-900 bg-opacity-70 items-center text-center justify-center w-full h-full text-white bottom-0 font-semibold text-2xl leading-10 animate-fade-in">
             <div className="w-1/2  space-y-10">
               <h2 className="text-5xl font-bold">Scalability:</h2>
               <p className="text-2xl leading-10">
@@ -120,12 +128,12 @@ const ImageSlider = () => {
             className="w-full object-cover h-full"
             alt=""
           />
-          <div className="absolute flex bg-gray-900 bg-opacity-60 items-center text-center justify-center w-full h-full text-white bottom-0 font-semibold text-2xl leading-10 animate-fade-in">
+          <div className="absolute flex bg-gray-900 bg-opacity-70 items-center text-center justify-center w-full h-full text-white bottom-0 font-semibold text-2xl leading-10 animate-fade-in">
             <div className="w-1/2  space-y-10">
               <h2 className="text-5xl font-bold">Industry Expertise:</h2>
               <p className="text-2xl leading-10">
-                We specialize in serving specific industries such as healthcare,
-                finance, manufacturing , transportation and offer tailored
+                We specialize in serving specific industries such as banking,
+                finance, and offer tailored
                 solutions that meet your unique needs.{" "}
               </p>
             </div>

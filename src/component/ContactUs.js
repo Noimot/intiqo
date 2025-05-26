@@ -117,7 +117,7 @@ const ContactUs = () => {
             </div>
           </div>
           <button
-            className="bg-[#26ade4] border border-transparent text-white py-2 px-5 text-lg rounded-md mt-10"
+            className="bg-[#C87759] border border-transparent text-white py-2 px-5 text-lg rounded-md mt-10"
             type="submit"
           >
             Submit Message

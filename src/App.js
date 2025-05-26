@@ -1,5 +1,6 @@
 import AboutUs from "./component/AboutUs";
 import ContactUs from "./component/ContactUs";
+import { CoreCompetences } from "./component/CoreCompetences";
 import Footer from "./component/Footer";
 import Header from "./component/Header";
 import Hero from "./component/Hero";
@@ -10,14 +11,15 @@ import RecentWorks from "./component/RecentWorks";
 
 function App() {
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col scroll-smooth">
         <Header />
       <div>
         <Hero />
         <AboutUs />
         <OurService />
-        <RecentWorks />
-        <OurTeam />
+        <CoreCompetences />
+        {/* <RecentWorks />
+        <OurTeam /> */}
         <Partners />
         <ContactUs />
         <Footer />

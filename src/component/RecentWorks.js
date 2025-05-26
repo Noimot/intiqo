@@ -15,6 +15,7 @@ const RecentWorks = () => {
     ref.current.style.zIndex = -1;
   };
 
+  console.log(firstRef, 'first ref')
   useEffect(() => {
     firstRef.current.style.zIndex = -1;
     secondRef.current.style.zIndex = -1;

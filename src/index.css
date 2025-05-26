@@ -24,4 +24,9 @@
   .scroll-up-text {
     animation: scrollUp 3s ease-out infinite; /* Adjust duration and ease as needed */
   }
+
+
+  html {
+    scroll-behavior: smooth;
+  }
   

@@ -3,34 +3,18 @@ import React from "react";
 const AboutUs = () => {
   return (
     <section className="px-10 sm:px-14 md:px-20 lg:px-40 py-20" id="about">
-      <h1 className="text-4xl text-[#4e4e4e] font-semibold text-center">
+      <h1 className="text-4xl text-[#C87759] font-bold text-center">
         About Us
       </h1>
       <div className="flex flex-col gap-x-16 items-start pt-10">
         <div className="flex items-center justify-center flex-col space-y-8">
           <p>
-            Welcome to Miatech, where innovation meets expertise in software
-            development. we are passionate about crafting innovative and
-            scalable software solutions that empower businesses to thrive in a
-            digital-first world.</p>
-            <p>
-              Founded with the vision to transform complex challenges into
-              seamless experiences, our team of dedicated developers, designers,
-              and strategists delivers cutting-edge technology tailored to your
-              needs. We specialize in end-to-end software development, from
-              ideation to deployment, focusing on creating robust,
-              user-friendly, and future-proof solutions. Our expertise spans web
-              and mobile applications, backend systems, cloud integrations, and
-              more.
-            </p>
-            <p>
-              With a commitment to excellence, agility, and collaboration, we
-              build lasting partnerships with our clients, driving success
-              through technology. Whether you're a startup looking to launch
-              your next big idea or an enterprise aiming to modernize your
-              systems, we're here to make it happen. Let’s build the future,
-              together.
-            </p>
+            Intiqo Technology Service Limited. is a leading technology company
+            delivering innovative software development, IT consultancy, and core
+            banking deployment services. Our mission is to build secure,
+            scalable, and efficient digital ecosystems for financial
+            institutions, fintechs, and enterprises.
+          </p>
         </div>
         <div className="flex flex-col md:flex-row gap-24 items-start mt-14">
           <div className="flex items-center justify-center flex-col flex-[50%]">
@@ -42,10 +26,8 @@ const AboutUs = () => {
               />
             </span>
             <p className="text-justify">
-              To empower businesses with technology that drives innovation,
-              efficiency, and growth. At Miatech, we aim to be more than just a
-              service provider; we strive to be your technology partner in
-              success.
+              To become Africa’s most trusted technology partner for digital
+              banking and enterprise innovation.
             </p>
           </div>
           <div className="flex items-center justify-center flex-col flex-[50%]">
@@ -57,9 +39,8 @@ const AboutUs = () => {
               />
             </span>
             <p className="text-justify">
-              To become a global leader in software development by continuously
-              delivering innovative, user-centric, and impactful solutions that
-              shape the future of businesses and communities.
+              To deliver impactful technology solutions that drive operational
+              excellence and financial inclusion.
             </p>
           </div>
         </div>
