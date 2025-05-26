@@ -5,9 +5,9 @@ import Footer from "./component/Footer";
 import Header from "./component/Header";
 import Hero from "./component/Hero";
 import OurService from "./component/OurService";
-import OurTeam from "./component/OurTeam";
+// import OurTeam from "./component/OurTeam";
 import Partners from "./component/Partner";
-import RecentWorks from "./component/RecentWorks";
+// import RecentWorks from "./component/RecentWorks";
 
 function App() {
   return (
