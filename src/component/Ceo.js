@@ -6,7 +6,7 @@ const Ceo = () => {
       <h3 className="text-4xl font-semibold pb-5 text-[#C87759] text-center">
         Meet The CEO
       </h3>
-      <div className="flex flex-col md:flex-row gap-24 mt-12">
+      <div className="flex flex-col md:flex-row gap-24 mt-12 justify-between">
         <div className="md:w-1/2 leading-8 font-medium text-justify">
           Victor Ajayi is a results-driven IT executive with over 13 years of
           experience at the intersection of technology and business innovation.
@@ -28,12 +28,14 @@ const Ceo = () => {
           on investor-backed ventures seeking long-term returns and market
           disruption.
         </div>
-        <div className="md:w-1/2 h-[40rem]">
-          <img
-            src="/images/intiqo-ceo.jpeg"
-            alt=""
-            className="h-full w-full object-cover transition duration-300 ease-in-out transform hover:scale-105 hover:rotate-1 shadow-md rounded-md"
-          />
+        <div className="md:w-1/2 h-[640px]">
+          <div className="w-full h-full">
+            <img
+              src="/images/intiqo-ceo.jpeg"
+              alt=""
+              className="w-full h-auto max-w-md mx-auto transition duration-300 ease-in-out transform hover:scale-105 hover:rotate-1 shadow-md rounded-md"
+            />
+          </div>
         </div>
       </div>
     </section>
