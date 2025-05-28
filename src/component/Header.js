@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import MobileMenu from "./MobileMenu";
+import { BsGlobe2 } from "react-icons/bs";
+import { FaRegEnvelope } from "react-icons/fa";
 
 const Header = () => {
   const [active, setActive] = useState("Home"); // Default active item
@@ -38,24 +40,19 @@ const Header = () => {
             ))}
           </ul>
           <ul className="flex items-center gap-x-2">
-            <li className="w-6 h-6 bg-[#404040] rounded-sm hover:bg-[#C87759]">
-              <a href="/" aria-label="Facebook">
-                <img src="/images/facebook.svg" alt="facebook icon" />
-              </a>
-            </li>
-            <li className="w-6 h-6 bg-[#404040] rounded-sm hover:bg-[#C87759]">
-              <a href="/" aria-label="Twitter">
-                <img src="/images/twitter.svg" alt="twitter icon" />
-              </a>
-            </li>
-            <li className="w-6 h-6 bg-[#404040] rounded-sm hover:bg-[#C87759]">
+            <li className="w-6 h-6 rounded-sm">
               <a
-                href="https://www.linkedin.com/in/ismail-oguntoyinbo-904aaa80/"
-                aria-label="LinkedIn"
+                href="http://www.intiqotech.com/"
+                aria-label="webiste"
                 target="_blank"
-              rel="noreferrer"
+                rel="noreferrer"
               >
-                <img src="/images/linkedln.svg" alt="linkenin icon" />
+                <BsGlobe2 className="text-[#404040] hover:text-[#C87759]" />
+              </a>
+            </li>
+            <li className="w-6 h-6 rounded-sm ">
+              <a href="mailto:info@intiqotech.com" aria-label="message">
+                <FaRegEnvelope className="text-[#404040] hover:text-[#C87759]" />
               </a>
             </li>
           </ul>
@@ -80,7 +77,15 @@ const Header = () => {
             }`}
           />
         </div>
-        {menu && <MobileMenu menu={menu} handleMenu={handleMenu} setActive={setActive} navItems={navItems} active={active} />}
+        {menu && (
+          <MobileMenu
+            menu={menu}
+            handleMenu={handleMenu}
+            setActive={setActive}
+            navItems={navItems}
+            active={active}
+          />
+        )}
       </nav>
     </header>
   );

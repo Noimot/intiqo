@@ -22,7 +22,7 @@ const ContactUs = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://formspree.io/f/xannlgeq", {
+    const response = await fetch("https://formspree.io/f/xgvkglyz", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -54,7 +54,7 @@ const ContactUs = () => {
     >
       <div className="text-center text-[#4e4e4e]">
         {" "}
-        <h1 className="text-4xl font-semibold pb-5">Contact Us</h1>
+        <h1 className="text-4xl font-semibold pb-5 text-[#C87759]">Contact Us</h1>
         <p>Do you have any message for us? Please drop your message here</p>
       </div>
       <div className="w-full sm:w-3/5 lg:w-1/2 pt-10">

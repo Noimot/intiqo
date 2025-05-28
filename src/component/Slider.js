@@ -133,8 +133,8 @@ const ImageSlider = () => {
               <h2 className="text-5xl font-bold">Industry Expertise:</h2>
               <p className="text-2xl leading-10">
                 We specialize in serving specific industries such as banking,
-                finance, and offer tailored
-                solutions that meet your unique needs.{" "}
+                finance, and offer tailored solutions that meet your unique
+                needs.{" "}
               </p>
             </div>
           </div>
@@ -146,7 +146,7 @@ const ImageSlider = () => {
 
 export default ImageSlider;
 
-export const PartnersSlider = ({ images }) => {
+export const PartnersSlider = ({ images, imgText }) => {
   const partnerSettings = {
     dots: false,
     infinite: true,
@@ -158,21 +158,28 @@ export const PartnersSlider = ({ images }) => {
   };
   return (
     <Slider {...partnerSettings}>
-      {images.map((image, index) => (
-        <a
-          href={image.link}
-          target="_blank"
-          rel="noreferrer"
-          className="flex items-center w-[2/3] h-16"
-          key={image.link + index}
-        >
-          <img
-            src={image.src}
-            className="w-full h-full object-contain"
-            alt={image.alt}
-          />
-        </a>
-      ))}
+      {imgText
+        ? images.map((image, index) => (
+            <div key={image.link + index} className="">
+              <span >{image.src}</span>
+              <p className="text-black/80 font-medium text-lg">{image.alt}</p>
+            </div>
+          ))
+        : images.map((image, index) => (
+            <a
+              href={image.link}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center w-[2/3] h-16"
+              key={image.link + index}
+            >
+              <img
+                src={image.src}
+                className="w-full h-full object-contain"
+                alt={image.alt}
+              />
+            </a>
+          ))}
     </Slider>
   );
 };

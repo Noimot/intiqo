@@ -41,7 +41,7 @@ const OurService = () => {
     >
       <div className="text-center text-white">
         <h1 className="text-4xl font-semibold text-center text-[#C87759]">Our Service</h1>
-        <p className="py-7 text-[#C87759]/80">
+        <p className="py-7 text-[#4e4e4e]">
           We render amazing services. <br />
         </p>
       </div>
