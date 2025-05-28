@@ -31,7 +31,7 @@ const IndustriesServed = () => {
     },
     {
       link: "",
-      src: <BiSolidBusiness className="text-[#C87759]/80 group-hover:text-white w-20 h-20 relative left-10"/>,
+      src: <BiSolidBusiness className="text-[#C87759]/80 group-hover:text-white w-20 h-20 relative left-16"/>,
       alt: "SMEs and largescale enterprises",
     },
   ];

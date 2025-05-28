@@ -23,7 +23,19 @@ const Partners = () => {
       src: "/images/img4.jpeg",
       alt: 'Thembani'
     },
+    {
+      link: "https://thembani.netlify.app/login",
+      src: "/images/capival.jpeg",
+      alt: 'Capival'
+    },
+    {
+      link: "https://thembani.netlify.app/login",
+      src: "/images/primepay-img.jpeg",
+      alt: 'Prime Pay'
+    },
+    
   ];
+  
   return (
     <section className="bg-[#4e4e4e] py-20 px-10 sm:px-14 md:px-20 lg:px-40" id="partners">
       <div className="text-center text-white">

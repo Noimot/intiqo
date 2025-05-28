@@ -162,7 +162,7 @@ export const PartnersSlider = ({ images, imgText }) => {
         ? images.map((image, index) => (
             <div key={image.link + index} className="">
               <span >{image.src}</span>
-              <p className="text-black/80 font-medium text-lg">{image.alt}</p>
+              <p className="text-white font-medium text-lg pt-5">{image.alt}</p>
             </div>
           ))
         : images.map((image, index) => (
